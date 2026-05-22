@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mikiyas Sinitayehu — Frontend Developer & UI Designer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+
+<nav id="navbar">
+  <div class="nav-logo">MS.</div>
+  <ul class="nav-links">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <div style="display:flex;align-items:center;gap:1rem">
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+      Mode
+    </button>
+    <a href="#contact" class="nav-cta">Hire Me</a>
+  </div>
+  <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#home" class="mm-link">Home</a>
+  <a href="#about" class="mm-link">About</a>
+  <a href="#projects" class="mm-link">Projects</a>
+  <a href="#services" class="mm-link">Services</a>
+  <a href="#contact" class="mm-link">Contact</a>
+</div>
+
+<!-- HERO -->
+<section id="home">
+  <div class="hero-bg">
+    <div class="grid-pattern"></div>
+    <div class="hero-glow1"></div>
+    <div class="hero-glow2"></div>
+  </div>
+  <div class="hero-content">
+    <div>
+      <div class="hero-tag"><span class="hero-tag-dot"></span></div>
+      <h1 class="hero-title">
+        <span class="line0">Hello, I'm</span>
+        <span class="line1">Mikiyas Sinitayehu.</span>
+        <span class="line2">Frontend Developer & UI Designer.</span>
+      </h1>
+      <p class="hero-desc"> I build high-performance web applications, design seamless user interfaces, and architect efficient SQL databases — transforming complex requirements into clean, accessible, and delightful digital products.</p>
+      <div class="hero-btns">
+        <a href="#projects" class="btn-primary">View Projects</a>
+        <a href="#contact" class="btn-secondary">Contact Me</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="avatar-ring">
+        <div class="avatar-inner">
+          <img src="image/profile.png" alt="Mikiyas Sinitayehu" class="profile-img">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="section-inner">
+    <div class="about-grid">
+      <div class="about-cards reveal">
+        <div class="about-card reveal-delay-1">
+          <div class="about-card-icon" style="background:rgba(79,140,255,.1)">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#4f8cff" stroke-width="2"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+          </div>
+          <div style="font-family:var(--heading);font-weight:700;font-size:1rem;margin-bottom:.4rem">Frontend Development</div>
+          <div style="color:var(--muted);font-size:.9rem">Building responsive, accessible UIs with HTML, CSS, and JavaScript — clean code, no shortcuts.</div>
+        </div>
+        <div class="about-card reveal-delay-2">
+          <div class="about-card-icon" style="background:rgba(167,139,250,.1)">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#a78bfa" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+          </div>
+          <div style="font-family:var(--heading);font-weight:700;font-size:1rem;margin-bottom:.4rem">Figma UI Design</div>
+          <div style="color:var(--muted);font-size:.9rem">Designing systems, components, and flows in Figma — bridging design and implementation seamlessly.</div>
+        </div>
+        <div class="about-card reveal-delay-3">
+          <div class="about-card-icon" style="background:rgba(52,211,153,.1)">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#34d399" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+          </div>
+          <div style="font-family:var(--heading);font-weight:700;font-size:1rem;margin-bottom:.4rem">SQL &amp; Databases</div>
+          <div style="color:var(--muted);font-size:.9rem">Designing relational schemas, writing optimized queries, and understanding data at a structural level.</div>
+        </div>
+      </div>
+      <div class="about-text reveal">
+        <span class="section-label">About Me</span>
+        <h2 class="section-title">Passionate about craft, obsessed with detail</h2>
+        <p class="about-detail">I'm a <span>frontend developer and UI designer</span> based in Addis Ababa, Ethiopia. My work sits at the intersection of visual design and technical implementation — I care deeply about both.</p>
+        <p class="about-detail" style="margin-top:.75rem">Currently studying Computer Science, with a focus on building web products that solve real problems for real people.</p>
+        <div class="highlight-chips" style="margin-top:1.5rem">
+          <span class="chip">HTML/CSS</span><span class="chip">JavaScript</span><span class="chip">C++</span>
+          <span class="chip">Python</span><span class="chip">Figma</span><span class="chip">SQL</span>
+          <span class="chip">Photo Editing</span><span class="chip">Responsive Design</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- PROJECTS SECTION WITH MODAL DETAILS -->
+<section id="projects">
+  <div class="section-inner">
+    <div class="reveal">
+      <span class="section-label">Portfolio</span>
+      <h2 class="section-title">Featured Projects</h2>
+      <p class="section-sub">Click "View Details" on any project to see comprehensive information, tech stack, challenges, and outcomes.</p>
+    </div>
+    <div class="projects-grid" id="projectsGrid"></div>
+  </div>
+</section>
+
+<!-- MODAL CONTAINER -->
+<div id="projectModal" class="modal">
+  <div class="modal-content">
+    <button class="modal-close" id="closeModal">×</button>
+    <div id="modalContent"></div>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="section-inner">
+    <div class="reveal"><span class="section-label">What I Offer</span><h2 class="section-title">Services</h2></div>
+    <div class="services-grid">
+      <div class="srv-card"><div class="srv-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#4f8cff" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></div><div class="srv-name">Frontend Development</div><div class="srv-desc">Responsive, accessible websites with clean code.</div></div>
+      <div class="srv-card"><div class="srv-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#a78bfa" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg></div><div class="srv-name">UI/UX Design (Figma)</div><div class="srv-desc">Wireframes, prototypes, design systems.</div></div>
+      <div class="srv-card"><div class="srv-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#34d399" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/></svg></div><div class="srv-name">Database Design (SQL)</div><div class="srv-desc">Schema design, query writing, data modeling.</div></div>
+      <div class="srv-card"><div class="srv-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#fb923c" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg></div><div class="srv-name">Photo Editing</div><div class="srv-desc">Retouching, color grading, compositing.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="section-inner">
+    <div class="reveal"><span class="section-label">Get In Touch</span><h2 class="section-title">Let's build something together</h2></div>
+    <div class="contact-wrap">
+      <div class="contact-info reveal">
+        <div class="contact-item"><div class="ci-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div><div><div class="ci-label">Email</div><div class="ci-val">mikiyassinitayehu@gmail.com</div></div></div>
+        <div class="contact-item"><div class="ci-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div><div><div class="ci-label">Location</div><div class="ci-val">Addis Ababa, Ethiopia</div></div></div>
+        <div class="social-row"><a href="https://github.com/mikiyas1922" target="_blank" class="social-btn"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg></a>
+        <a href="https://www.linkedin.com/in/mikiyas-sinitayehu-5a503b2b4/" target="_blank" class="social-btn"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a></div>
+      </div>
+      <div class="reveal"><form action="https://formsubmit.co/mikiyassinitayehu@gmail.com" method="POST"><input type="text" name="_honey" style="display:none"><input type="hidden" name="_captcha" value="false"><div class="form-row"><div><label>Name</label><input type="text" name="name" required></div><div><label>Email</label><input type="email" name="email" required></div></div><div><label>Message</label><textarea name="message" rows="4" required></textarea></div><button type="submit" class="btn-primary">Send Message</button></form></div>
+    </div>
+  </div>
+</section>
+
+<footer><div class="footer-inner"><div>MS.</div><div>Designed by Mikiyas Sinitayehu — <span id="year"></span></div><div></div></div></footer>
+
+<script>
+// Projects Data with detailed information
+const projectsData = [
+  {
+    id: 1,
+    title: "Tour Ethiopia Travel Platform",
+    category: "Frontend Development",
+    tags: ["HTML", "CSS", "JavaScript", "Node.js", "MongoDB"],
+    image: "image/tour.png",
+    description: "A comprehensive tourism marketplace connecting travelers with local experiences, accommodations, and transportation services across Ethiopia.",
+    fullDescription: "Tour Ethiopia is a full-stack web platform that revolutionizes how travelers discover and book Ethiopian tourism experiences. The platform integrates real-time availability, secure payments, and user reviews.",
+    challenge: "Building a real-time booking system that handles concurrent reservations and integrates with multiple service providers.",
+    solution: "Implemented a robust backend with Node.js and MongoDB, using WebSockets for real-time updates and a queue system for booking conflicts.",
+    outcome: "Successfully launched with 50+ tour operators, 200+ active users in first month, and 95% positive feedback on booking experience.",
+    techStack: ["HTML5", "CSS3", "JavaScript ES6", "Node.js", "Express.js", "MongoDB", "Socket.io", "Stripe API"],
+    features: [
+      "Interactive tour booking with real-time availability",
+      "User authentication and personalized dashboard",
+      "Secure payment gateway integration",
+      "Review and rating system",
+      "Mobile-responsive design",
+      "Email notifications for bookings"
+    ],
+    
+  },
+  {
+    id: 2,
+    title: "Tour & Travel Design System",
+    category: "UI/UX Design",
+    tags: ["Figma", "Design System", "Prototyping"],
+    image: "image/figma.png",
+    description: "A complete, scalable design system for modern travel platforms with 80+ reusable components and multiple themes.",
+    fullDescription: "A comprehensive Figma design system built for scalability and consistency across large travel e-commerce platforms. Includes component library, typography scales, color palettes, and interactive prototypes.",
+    challenge: "Creating a flexible design system that works across multiple devices while maintaining brand consistency and enabling rapid development handoff.",
+    solution: "Developed atomic design methodology with variants, auto-layout, and comprehensive documentation. Created design tokens for easy theming.",
+    outcome: "Reduced design-to-development time by 60% and ensured consistent UI across 5+ product lines. Used by 3 development teams.",
+    techStack: ["Figma", "Auto Layout", "Variants", "Components", "Design Tokens", "Storybook"],
+    features: [
+      "80+ production-ready UI components",
+      "4 color themes (light, dark, high-contrast)",
+      "Complete checkout flow prototyping",
+      "Developer-friendly annotations with CSS specs",
+      "Responsive breakpoint system",
+      "Interactive component playground"
+    ],
+    
+  },
+  {
+    id: 3,
+    title: "tour Database Architecture",
+    category: "Database Design",
+    tags: ["PostgreSQL", "MySQL", "SQL"],
+    image: "image/database.png",
+    description: "A fully normalized relational database schema designed for scalability in high-traffic e-commerce platforms supporting millions of transactions.",
+    fullDescription: "Enterprise-grade database architecture supporting millions of products, customers, and transactions with optimized query performance and data integrity constraints.",
+    challenge: "Designing a schema that handles high concurrency while maintaining data integrity and sub-second query response times.",
+    solution: "Implemented proper indexing strategies, query optimization, partitioning for large tables, and materialized views for reporting.",
+    outcome: "Achieved 99.9% query performance under load with 500ms average response time. Supports 10,000 concurrent users.",
+    techStack: ["PostgreSQL", "MySQL", "Redis", "Indexing", "Stored Procedures", "Triggers"],
+    features: [
+      "15+ interconnected normalized tables",
+      "Optimized product search with full-text indexing",
+      "Real-time inventory management",
+      "Analytics reporting views",
+      "Automated backup strategies",
+      "ACID compliance for transaction safety"
+    ],
+  
+  },
+  {
+    id: 4,
+    title: "Healthcare Management System",
+    category: "Frontend Development",
+    tags: ["HTML", "CSS", "JavaScript", "Chart.js", "API"],
+    image: "image/health system.png",
+    description: "A comprehensive healthcare dashboard for patient management, appointment scheduling, medical records, and real-time analytics visualization.",
+    fullDescription: "Modern healthcare management system designed for clinics and hospitals. Features patient registration, appointment scheduling, electronic medical records (EMR), prescription management, and real-time analytics dashboard.",
+    challenge: "Creating an intuitive, accessible interface for medical staff with complex data visualization needs while ensuring fast performance on various devices.",
+    solution: "Built responsive dashboard with Chart.js for dynamic graphs, implemented role-based access control (RBAC), and ensured WCAG 2.1 AA accessibility compliance.",
+    outcome: "Adopted by 3 local clinics, reduced patient wait time by 40%, improved appointment scheduling efficiency by 70%.",
+    techStack: ["HTML5", "CSS3", "JavaScript ES6", "Chart.js", "LocalStorage", "REST API"],
+    features: [
+      "Patient registration and medical records",
+      "Appointment scheduling calendar",
+      "Digital prescription management",
+      "Real-time analytics dashboard with charts",
+      "Role-based access control",
+      "Mobile-responsive design",
+      "Dark/light mode toggle"
+    ],
+    
+  },
+  {
+    id: 5,
+    title: "graphics",
+    category: "Graphics Design",
+    tags: ["Photoshop", "After Effects", "Premiere Pro", "Blender"],
+    image: "image/graphics.png",
+    description: "Professional motion graphics, 2D/3D animations, and visual effects for games, social media, and commercial projects.",
+    fullDescription: "A collection of professional animation and motion graphics work including character animation, explainer videos, logo animations, and visual effects for various media platforms.",
+    challenge: "Creating smooth, engaging animations that convey complex messages while maintaining professional quality and meeting tight deadlines.",
+    solution: "Developed efficient workflow using Adobe After Effects and Blender, implemented template systems for repeatable animations, and used proxy workflows for faster rendering.",
+    outcome: "Featured in local film festivals, collaborated with 10+ content creators, and achieved over 500K combined views on animated content.",
+    techStack: ["c++", "Photoshop", "After Effects", "Premiere Pro", "Blender", "Motion Graphics", "Visual Effects"],
+    features: [
+      "2D character animation and rigging",
+      "3D modeling and animation in Blender",
+      "Explainer videos and motion graphics",
+      "Logo and title animations",
+      "Visual effects and compositing",
+      "Color grading and audio synchronization",
+      "Social media content creation"
+    ],
+ 
+  },
+  {
+    id: 6,
+    title: "Airline Reservation Management System",
+    category: "Web App",
+    tags: ["Java", "JavaScript", "LocalStorage", "CRUD"],
+    image: "image/airline.png",
+    description: "A comprehensive airline reservation system for flight booking, seat selection, passenger management, and booking confirmation.",
+    fullDescription: "A full-featured airline reservation web application that allows users to search flights, select seats, manage passenger information, and confirm bookings with persistent storage.",
+    challenge: "Implementing real-time seat availability tracking and preventing double-booking while maintaining smooth user experience.",
+    solution: "Used JavaScript with localStorage for data persistence, implemented seat locking mechanism during selection, and added validation for all form inputs.",
+    outcome: "Successfully deployed as a demo system, processing 500+ test bookings with zero conflicts and receiving positive user feedback.",
+    techStack: ["HTML5", "CSS3", "Java", "LocalStorage", "CRUD Operations", "REST API"],
+    features: [
+      "Flight search and filtering",
+      "Interactive seat selection map",
+      "Passenger information management",
+      "Booking confirmation and summary",
+      "View and cancel reservations",
+      "Data persistence with localStorage",
+      "Mobile-responsive design",
+      "Form validation and error handling"
+    ],
+   
+  }
+];
+// Render projects grid
+function renderProjects() {
+  const grid = document.getElementById('projectsGrid');
+  grid.innerHTML = projectsData.map(project => `
+    <div class="project-card reveal">
+      <div class="project-thumb" onclick="openProjectModal(${project.id})">
+        <img src="${project.image}" alt="${project.title}" class="project-img">
+      </div>
+      <div class="project-body">
+        <div class="project-tags">
+          ${project.tags.slice(0, 3).map(tag => `<span class="ptag">${tag}</span>`).join('')}
+        </div>
+        <div class="project-name">${project.title}</div>
+        <div class="project-desc">${project.description.substring(0, 100)}...</div>
+        <div class="tech-stack">
+          ${project.techStack.slice(0, 3).map(tech => `<span class="tech-badge">${tech}</span>`).join('')}
+        </div>
+        <button class="view-details-btn" onclick="openProjectModal(${project.id})">📖 View Full Details →</button>
+      </div>
+    </div>
+  `).join('');
+}
+
+// Open modal with project details
+function openProjectModal(projectId) {
+  const project = projectsData.find(p => p.id === projectId);
+  if (!project) return;
+  
+  const modal = document.getElementById('projectModal');
+  const modalContent = document.getElementById('modalContent');
+  
+  modalContent.innerHTML = `
+    <div class="modal-header">
+      <img src="${project.image}" alt="${project.title}">
+      <div class="modal-header-overlay">
+        <span class="project-category">${project.category}</span>
+        <h2>${project.title}</h2>
+      </div>
+    </div>
+    <div class="modal-body">
+      <div class="modal-section">
+        <h3> Project Overview</h3>
+        <p>${project.fullDescription || project.description}</p>
+      </div>
+      
+      <div class="modal-section">
+        <h3> Challenge</h3>
+        <p>${project.challenge}</p>
+      </div>
+      
+      <div class="modal-section">
+        <h3> Solution</h3>
+        <p>${project.solution}</p>
+      </div>
+      
+      <div class="modal-section">
+        <h3> Results & Outcome</h3>
+        <p>${project.outcome}</p>
+      </div>
+      
+      <div class="modal-section">
+        <h3>Technologies Used</h3>
+        <div class="tech-stack">
+          ${project.techStack.map(tech => `<span class="tech-badge">${tech}</span>`).join('')}
+        </div>
+      </div>
+      
+      <div class="modal-section">
+        <h3> Key Features</h3>
+        <ul class="project-features">
+          ${project.features.map(f => `<li>${f}</li>`).join('')}
+        </ul>
+      </div>
+      
+      
+  `;
+  
+  modal.classList.add('active');
+  document.body.classList.add('modal-open');
+}
+
+// Close modal
+document.getElementById('closeModal').addEventListener('click', () => {
+  const modal = document.getElementById('projectModal');
+  modal.classList.remove('active');
+  document.body.classList.remove('modal-open');
+});
+
+// Close modal on background click
+document.getElementById('projectModal').addEventListener('click', (e) => {
+  if (e.target === document.getElementById('projectModal')) {
+    document.getElementById('projectModal').classList.remove('active');
+    document.body.classList.remove('modal-open');
+  }
+});
+
+// Close modal on Escape key
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') {
+    const modal = document.getElementById('projectModal');
+    if (modal.classList.contains('active')) {
+      modal.classList.remove('active');
+      document.body.classList.remove('modal-open');
+    }
+  }
+});
+
+// Initialize
+document.getElementById('year').textContent = new Date().getFullYear();
+renderProjects();
+
+// Navbar scroll effect
+const nav = document.getElementById('navbar');
+window.addEventListener('scroll', () => nav.classList.toggle('scrolled', window.scrollY > 50));
+
+// Mobile menu
+const hamburger = document.getElementById('hamburger');
+const mobileMenu = document.getElementById('mobileMenu');
+hamburger?.addEventListener('click', () => {
+  hamburger.classList.toggle('open');
+  mobileMenu.classList.toggle('open');
+  document.body.style.overflow = mobileMenu.classList.contains('open') ? 'hidden' : '';
+});
+document.querySelectorAll('.mm-link, .mobile-menu a').forEach(link => {
+  link.addEventListener('click', () => {
+    hamburger?.classList.remove('open');
+    mobileMenu?.classList.remove('open');
+    document.body.style.overflow = '';
+  });
+});
+
+// Theme toggle
+document.getElementById('themeToggle')?.addEventListener('click', () => {
+  document.body.classList.toggle('light-mode');
+});
+
+// Smooth scroll
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function(e) {
+    e.preventDefault();
+    const target = document.querySelector(this.getAttribute('href'));
+    target?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  });
+});
+
+// Reveal animations
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => e.isIntersecting && e.target.classList.add('visible'));
+}, { threshold: 0.1 });
+document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+</script>
+</body>
+</html>
