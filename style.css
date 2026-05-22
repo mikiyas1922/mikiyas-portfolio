@@ -72,6 +72,15 @@ h1.hero-title { font-family: var(--heading); font-size: clamp(2.8rem,5.5vw,5.5re
 
 @keyframes fadeUp { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: translateY(0); } }
 @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+/* Lazy loading fade-in effect */
+.project-img, .profile-img {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.project-img.loaded, .profile-img.loaded {
+  opacity: 1;
+}
 
 /* ── SECTIONS COMMON ── */
 section { padding: 6rem 2rem; }
