@@ -102,6 +102,21 @@ if (form) {
   });
 }
 
+// Function to lazy load all images
+function lazyLoadImages() {
+  // Select all images that need lazy loading
+  const images = document.querySelectorAll('img:not([loading="eager"])');
+  
+  // Add loading="lazy" attribute
+  images.forEach(img => {
+    if (!img.hasAttribute('loading')) {
+      img.setAttribute('loading', 'lazy');
+    }
+    if (!img.hasAttribute('decoding')) {
+      img.setAttribute('decoding', 'async');
+    }
+  });
+
 
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
